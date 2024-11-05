@@ -36,7 +36,6 @@ mod part2 {
         let letter = rest.next().ok_or(anyhow!("Invalid input"))?;
         let l_pos1 = rest.nth(pos1 + 1).ok_or(anyhow!("Invalid input"))?;
         let l_pos2 = rest.nth(pos2 - pos1 - 1).ok_or(anyhow!("Invalid input"))?;
-        println!("{pos1}: {l_pos1} ;; {pos2}: {l_pos2}");
         Ok(l_pos1 == letter && l_pos2 != letter || l_pos1 != letter && l_pos2 == letter)
     }
 
