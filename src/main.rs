@@ -3,6 +3,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn main() {
     let mut args = std::env::args();
@@ -23,6 +24,7 @@ fn main() {
         [3, part] => day3::solve(*part).unwrap(),
         [4, part] => day4::solve(*part).unwrap(),
         [5, part] => day5::solve(*part).unwrap(),
+        [6, part] => day6::solve(*part).unwrap(),
         _ => panic!("Invalid day/part"),
     };
 }
